@@ -1,0 +1,43 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.homeHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+}
+.homeHeaderLeft {
+  display: flex;
+  align-items: center;
+}
+.homeHeaderLeft p {
+  margin-right: 20px;
+  font-size: 15px;
+}
+.homeHeaderRight {
+  display: flex;
+  align-items: center;
+}
+.homeHeaderRight p {
+  margin-left: 20px;
+  font-size: 15px;
+}
+.homeHeaderRight > svg {
+  margin-left: 20px;
+}
+.homeHeaderRight .MuiAvatar-root {
+  margin-left: 20px;
+}
+.homeBody{
+    flex: 1;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+}
+.homeBody>img{
+    object-fit: contain;
+    height: 100px;
+}
