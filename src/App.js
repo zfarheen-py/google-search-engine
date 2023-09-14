@@ -5,7 +5,7 @@ import SearchPage from './pages/SearchPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
