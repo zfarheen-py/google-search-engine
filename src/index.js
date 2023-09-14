@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Stateprovider } from './StateProvider';
 import reducer, { initialState } from './reducer';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +13,9 @@ root.render(
     {/* wrapping our <App/> component with StateProvider */}
     {/* because we want to provide data to our <App/> component */}
     <Stateprovider initialState={initialState} reducer={reducer}>
-      <App /> 
+      <BrowserRouter basename={ProcessingInstruction.env.PUBLIC_URL}>
+        <App />
+      </BrowserRouter>
     </Stateprovider>
   </React.StrictMode>
 );
